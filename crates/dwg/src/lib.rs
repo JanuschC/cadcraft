@@ -1196,7 +1196,7 @@ fn unsupported(version: &str) -> String {
 
 /// Which build has no DWG bridge, for the stubs' errors.
 #[cfg(no_dwg_bridge)]
-const NO_BRIDGE_BUILD: &str = if cfg!(target_arch = "wasm32") { "web" } else { "FreeBSD aarch64" };
+const NO_BRIDGE_BUILD: &str = "FreeBSD aarch64";
 
 /// There's no worker without a bridge.
 #[cfg(no_dwg_bridge)]
